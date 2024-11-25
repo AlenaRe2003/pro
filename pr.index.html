@@ -1,0 +1,37 @@
+<style>
+  .circle-btn {
+    border: none;
+    border-radius: 50%;
+    background-color: #ff4081;
+    color: #fff;
+    font-size: 1rem;
+    padding: 1rem 2rem;
+    cursor: pointer;
+    position: relative;
+    animation: pulse 2s ease-in-out infinite;
+  }
+  
+  @keyframes pulse {
+    0% {
+      transform: scale(0.95);
+      box-shadow: 0 0 0 0 rgba(255, 64, 129, 0.7);
+    }
+    70% {
+      transform: scale(1);
+      box-shadow: 0 0 0 10px rgba(255, 64, 129, 0);
+    }
+    100% {
+      transform: scale(0.95);
+      box-shadow: 0 0 0 0 rgba(255, 64, 129, 0);
+    }
+  }
+  
+  /* добавляем стили для наведения */
+  .circle-btn:hover {
+    background-color: #007bff; /* меняем цвет фона на синий */
+  }
+  
+  
+  /* добавляем комментарий */
+  /* стили для состояния наведения на кнопку */
+  </style>
